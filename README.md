@@ -2,7 +2,9 @@
 
 A minimalist, privacy-first Chrome extension that uses Gemini to categorize Hacker News comments into Green (Insight), Yellow (Neutral), and Red (Noise) signal levels.
 
-This project was built to address the "High Signal vs. High Noise" problem on Hacker News, as discussed by tech leaders like Peter Steinberger, Andrej Karpathy, and Paul Graham.
+<img width="870" height="645" alt="image" src="https://github.com/user-attachments/assets/120f8784-cafe-4e18-b4b5-dae2129d42a1" />
+
+Inspited by the X conversation between Peter Steinberger, Andrej Karpathy, and Paul Graham.
 
 ## 🚀 Features
 - **Real-time Signal Analysis:** Uses Gemini models to score comments based on Insight Density vs. Cynicism.
