@@ -1,0 +1,24 @@
+.hn-signal-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 8px;
+  cursor: help;
+  vertical-align: middle;
+}
+
+.hn-signal-green {
+  background-color: #4CAF50;
+  box-shadow: 0 0 5px #4CAF50;
+}
+
+.hn-signal-yellow {
+  background-color: #FFC107;
+  box-shadow: 0 0 5px #FFC107;
+}
+
+.hn-signal-red {
+  background-color: #F44336;
+  box-shadow: 0 0 5px #F44336;
+}

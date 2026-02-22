@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { font-family: sans-serif; padding: 20px; width: 320px; color: #333; }
+    h2 { font-size: 1.2rem; color: #ff6600; margin-top: 0; }
+    .status { font-size: 0.9rem; margin-bottom: 15px; }
+    .badge { background: #eee; padding: 2px 6px; border-radius: 4px; font-weight: bold; }
+    button { background: #ff6600; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer; width: 100%; }
+    button:hover { background: #e65c00; }
+    .footer { font-size: 0.8rem; color: #666; margin-top: 15px; text-align: center; }
+  </style>
+</head>
+<body>
+  <h2>HN Comment Quality Detector 🦞</h2>
+  <div class="status">Model Status: <span id="model-status" class="badge">Checking...</span></div>
+  <button id="open-options">Signal Settings</button>
+  <div class="footer">Privacy First. Local AI. No Secrets Shared.</div>
+  <script src="popup.js"></script>
+</body>
+</html>

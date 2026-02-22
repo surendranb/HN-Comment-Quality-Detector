@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { font-family: sans-serif; padding: 20px; max-width: 500px; margin: 0 auto; color: #333; }
+    h1 { font-size: 1.5rem; color: #ff6600; text-align: center; }
+    .option { margin-bottom: 20px; }
+    label { display: block; margin-bottom: 5px; font-weight: bold; }
+    textarea { width: 100%; height: 60px; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+    input, select { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+    .footer { font-size: 0.9rem; color: #666; margin-top: 20px; text-align: center; }
+    button { background: #ff6600; color: white; border: none; padding: 10px 15px; border-radius: 4px; cursor: pointer; width: 100%; font-weight: bold; }
+    button:hover { background: #e65c00; }
+    .hint { font-size: 0.8rem; color: #666; margin-top: 4px; }
+  </style>
+</head>
+<body>
+  <h1>Signal Settings 🦞</h1>
+  
+  <div class="option">
+    <label for="model-type">Model Source</label>
+    <select id="model-type">
+      <option value="gemini-nano">Gemini Nano (Local / Built-in)</option>
+      <option value="gemini-api">Gemini API (Cloud / Pro)</option>
+    </select>
+  </div>
+
+  <div id="api-settings" style="display:none;">
+    <div class="option">
+      <label for="api-key">Gemini API Key</label>
+      <input type="password" id="api-key" placeholder="Enter your Google AI Studio API Key">
+      <div class="hint">Your key is stored locally and never shared.</div>
+    </div>
+    <div class="option">
+      <label for="api-model">API Model</label>
+      <select id="api-model">
+        <option value="gemini-2.5-flash-lite">Gemini 2.5 Flash Lite (Fastest)</option>
+        <option value="gemini-2.5-flash">Gemini 2.5 Flash</option>
+        <option value="gemini-3-flash-preview">Gemini 3 Flash Preview</option>
+        <option value="gemini-3-pro-preview">Gemini 3 Pro Preview</option>
+        <option value="gemini-3.1-pro-preview">Gemini 3.1 Pro Preview</option>
+      </select>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="option">
+    <label for="green-prompt">🟢 Green (High Insight/Nuance)</label>
+    <textarea id="green-prompt"></textarea>
+  </div>
+  <div class="option">
+    <label for="yellow-prompt">🟡 Yellow (Neutral/Casual)</label>
+    <textarea id="yellow-prompt"></textarea>
+  </div>
+  <div class="option">
+    <label for="red-prompt">🔴 Red (Noise/Cynical/Toxic)</label>
+    <textarea id="red-prompt"></textarea>
+  </div>
+  
+  <button id="save">Save Changes</button>
+  <div class="footer">Privacy First. Local AI. No Secrets Shared.</div>
+  <script src="options.js"></script>
+</body>
+</html>
