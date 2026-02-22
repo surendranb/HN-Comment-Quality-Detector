@@ -8,7 +8,7 @@ Inspited by the X conversation between Peter Steinberger, Andrej Karpathy, and P
 
 ## 🚀 Features
 - **Real-time Signal Analysis:** Uses Gemini models to score comments based on Insight Density vs. Cynicism.
-- **Privacy First (Untested):** Supports **Gemini Nano** for local, on-device analysis. Note: The Gemini Nano implementation is currently experimental and untested.
+- **Privacy First:** Supports **Gemini Nano** for local, on-device analysis. Note: The Gemini Nano implementation is currently experimental and untested.
 - **Full Transparency:** Doesn't hide comments; it just adds a subtle, color-coded visual indicator (🟢/🟡/🔴).
 - **Customizable:** Fully editable prompts for Green, Yellow, and Red thresholds in the settings.
 - **Batch Optimized:** Uses batch processing and JSON mode to minimize API calls and stay within rate limits.
